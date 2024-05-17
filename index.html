@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority-Based To-Do List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<html>
+    <div class="container">
+        <h1>Priority-Based To-Do List</h1>
+        <form id="todo-form">
+            <input type="text" id="task-input" placeholder="Enter a new task" required>
+            <select id="priority-input">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <div class="tasks-container">
+            <div class="tasks" id="high-priority">
+                <h2>High Priority</h2>
+                <ul id="high-list"></ul>
+            </div>
+            <div class="tasks" id="medium-priority">
+                <h2>Medium Priority</h2>
+                <ul id="medium-list"></ul>
+            </div>
+            <div class="tasks" id="low-priority">
+                <h2>Low Priority</h2>
+                <ul id="low-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
